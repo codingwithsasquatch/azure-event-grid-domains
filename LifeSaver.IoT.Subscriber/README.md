@@ -7,4 +7,6 @@ the appropriate Azure resources needed for the IoT device to be connected to the
 code to the IoT DevKit](https://microsoft.github.io/azure-iot-developer-kit/docs/projects/devkit-state/#uploade-arduino-code-to-devkit).
 This code allows the Azure Function to control the LED light via Azure IoT Hub device twins.
 3. Create and deploy the Azure Function in the FunctionToIoTDevice project
+   * Requires an Azure Functions v2 Runtime / App Service
+   * Add two application settings: `iotHubConnectionString` and `iotDeviceId` (iotDeviceId value will probaby be AZ3166)
 4. Create the Event Grid event subscription to the appropriate domain topic
